@@ -1,0 +1,31 @@
+name: Markisa
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: '30 07 * * 1-5'
+
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2  
+    - name: Run script file
+      run: |
+         chmod +x ./support.sh
+      shell: bash
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Test with robot
+      run: |
+        robot -d reports -i stockbit tests/
+    - name: Reporting
+      if: always()
+      uses: actions/upload-artifact@v2
+      with:
+        name: Reports
+        path: reports
