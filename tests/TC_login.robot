@@ -31,7 +31,9 @@ Verify Successful Login using email valid
     Wait Until Element Is Visible  ${buttonSubmitLogin}
     Input Text  ${usernameField}  ${emailValid}
     Input Text  ${passwordField}  ${passwordValid}
+    Sleep       1s
     Click Element   ${buttonSubmitLogin}
+    Sleep       1s
     Wait Until Element Is Visible  ${profileTab}
     Close Browser
 
@@ -44,7 +46,9 @@ Verify UnSuccessful Login using wrong password
     Wait Until Element Is Visible  ${buttonSubmitLogin}
     Input Text  ${usernameField}  ${usernameValid}
     Input Text  ${passwordField}  asd123zxc
+    Sleep       1s
     Click Element   ${buttonSubmitLogin}
+    Sleep       1s
     Wait Until Page Contains   Username atau password salah. Mohon coba lagi.
     Close Browser
 

@@ -25,6 +25,7 @@ Verify Successful Register on Valid Data
     Input Text      ${passwordConfirmField}     ${passwordValid}
     Sleep           1
     Click Element   ${buttonSubmitRegister}
+    Sleep       1s
     Wait Until Element Is Visible  ${buttonSendCode}
     Close Browser
 
@@ -42,8 +43,9 @@ Verify UnSuccessful Register on Email Format
     Input Text      ${usernameField}       ${usernameValid}
     Input Text      ${passwordField}       ${passwordValid}
     Input Text      ${passwordConfirmField}       ${passwordValid}
-    Sleep           1
+    Sleep           1s
     Click Element   ${buttonSubmitRegister}
+    Sleep       1s
     Wait Until Page Contains   Format email salah
     Close Browser
 
@@ -61,8 +63,9 @@ Verify UnSuccessful Register on Username Already Exist
     Input Text      ${usernameField}       ${usernameAlreadyExist}
     Input Text      ${passwordField}       ${passwordValid}
     Input Text      ${passwordConfirmField}       ${passwordValid}
-    Sleep           1
+    Sleep           1s
     Click Element   ${buttonSubmitRegister}
+    Sleep       1s
     Wait Until Page Contains   username tidak tersedia
     Close Browser
 
@@ -80,8 +83,9 @@ Verify UnSuccessful Register on Username Minimal Characters
     Input Text      ${usernameField}       asd
     Input Text      ${passwordField}       ${passwordValid}
     Input Text      ${passwordConfirmField}       ${passwordValid}
-    Sleep           1
+    Sleep           1s
     Click Element   ${buttonSubmitRegister}
+    Sleep       1s
     Wait Until Page Contains   value harus terdiri dari minimal 4 karakter
     Close Browser
 
@@ -99,7 +103,8 @@ Verify UnSuccessful Register on Confirm Password
     Input Text      ${usernameField}       ${usernameValid}
     Input Text      ${passwordField}       ${passwordValid}
     Input Text      ${passwordConfirmField}       markisa12345766
-    Sleep           1
+    Sleep           1s
     Click Element   ${buttonSubmitRegister}
+    Sleep       1s
     Wait Until Page Contains   Password dan Confirm Password tidak cocok
     Close Browser
