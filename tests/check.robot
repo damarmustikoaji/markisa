@@ -13,7 +13,7 @@ Verify Google
     Title Should Be         Google
     Close All Browsers
 
-Verify kumparan
+Verify Stockbit.com
     [documentation]     Check script automation testing run di local dan di pipeline runner dengan url stockbit
     [tags]  Stockbit
     Go To    https://stockbit.com
