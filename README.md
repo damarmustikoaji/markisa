@@ -22,6 +22,33 @@ Automation Testing for Website using Robot Framework - Selenium Library
 - robot -d reports tests/check.robot    | use file test
 ```
 
+### Directory Structure
+
+    .
+    Markisa
+    |
+    ├── data
+    |     ├── data.robot
+    |     └── .....robot
+    ├── page_objects
+    |     ├── data.robot
+    |     └── .....robot
+    ├── reports
+    |     ├── data.robot
+    |     └── .....robot
+    ├── resources
+    |     ├── data.robot
+    |     └── .....robot
+    ├── tests
+    |     ├── TC.robot
+    |     └── .....robot
+    ├── .gitignore
+    ├── README.md
+    ├── requirements.txt
+    ├── support.sh
+    └── README.md
+
+
 ## Workflows
 - Go to Github [Actions](https://github.com/damarmustikoaji/markisa/actions) for details
 
