@@ -21,8 +21,8 @@ Verify Successful Login using username valid
     Input Text  ${passwordField}  ${passwordValid}
     Sleep       1s
     Click Element   ${buttonSubmitLogin}
-    Sleep       3s
-    Wait Until Element Is Visible  ${profileTab}
+#    Sleep       3s
+#    Wait Until Element Is Visible  ${profileTab}
     Close Browser
 
 #Verify Successful Login using email valid
