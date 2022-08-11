@@ -28,3 +28,6 @@ Automation Testing for Website using Robot Framework - Selenium Library
 ## Reports
 
 ![Screen Shot 2022-07-10 at 21 38 30](./resources/report.png)
+
+## Testing
+- stockbit.com
